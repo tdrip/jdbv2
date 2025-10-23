@@ -1,2 +1,3 @@
 # jdbv2
-A SImple JSON Database Solution - Version 2
+
+A Simple JSON Database Solution - Version 2

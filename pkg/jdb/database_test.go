@@ -9,7 +9,7 @@ import (
 
 func TestDatabaseCount(t *testing.T) {
 
-	fs := s.FileStorgae{
+	fs := s.FileStorage{
 		Path: "./db.json",
 		Perm: 666,
 	}
@@ -54,7 +54,7 @@ func TestDatabaseCount(t *testing.T) {
 
 func TestDatabaseGetItems(t *testing.T) {
 
-	fs := s.FileStorgae{
+	fs := s.FileStorage{
 		Path: "./db.json",
 		Perm: 666,
 	}
@@ -91,7 +91,7 @@ func TestDatabaseGetItems(t *testing.T) {
 }
 
 func TestDatabaseGetItem(t *testing.T) {
-	fs := s.FileStorgae{
+	fs := s.FileStorage{
 		Path: "./db.json",
 		Perm: 666,
 	}
@@ -126,7 +126,7 @@ func TestDatabaseGetItem(t *testing.T) {
 }
 
 func TestDatabaseUpdate(t *testing.T) {
-	fs := s.FileStorgae{
+	fs := s.FileStorage{
 		Path: "./db.json",
 		Perm: 666,
 	}
@@ -170,7 +170,7 @@ func TestDatabaseUpdate(t *testing.T) {
 }
 
 func TestDatabaseDelete(t *testing.T) {
-	fs := s.FileStorgae{
+	fs := s.FileStorage{
 		Path: "./db.json",
 		Perm: 666,
 	}

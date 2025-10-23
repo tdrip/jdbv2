@@ -7,20 +7,20 @@ import (
 	i "github.com/tdrip/jdbv2/pkg/interfaces"
 )
 
-type FileStorgae struct {
+type FileStorage struct {
 	Path string
 	Perm os.FileMode
 }
 
-func (fs FileStorgae) Read() ([]byte, error) {
+func (fs FileStorage) Read() ([]byte, error) {
 	return os.ReadFile(fs.Path)
 }
 
-func (fs FileStorgae) Write(data []byte) error {
+func (fs FileStorage) Write(data []byte) error {
 	return os.WriteFile(fs.Path, data, fs.Perm)
 }
 
-func (fs FileStorgae) Intiliase(encdata i.EncodeKeyItems) error {
+func (fs FileStorage) Intiliase(encdata i.EncodeKeyItems) error {
 	if len(fs.Path) == 0 {
 		return errors.New("file path for json database missing")
 	}
